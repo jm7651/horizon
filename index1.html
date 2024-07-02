@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="
+    https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
+    "
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="nav">
+      <img src="images/horizon_logo.svg" alt="" />
+    </div>
+
+    <div id="video_section">
+      <div id="main_title_wrapper">
+        <h1 class="main_title">Horizon in industry</h1>
+        <div class="sub_title">
+          Horizon은 산업 데이터를 이해합니다.<br />제조업 AI 전환 가속화를 위한
+          산업별 LLM을 소개합니다.
+        </div>
+      </div>
+      <video
+        id="video"
+        width="100%"
+        src="master_main.mp4"
+        type="video/mp4"
+        autoplay=""
+        muted=""
+        loop=""
+        playsinline=""
+      >
+        <source src="master_main.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="banner">
+      <div class="banner_graphic">
+        <div id="banner_graphic_001"></div>
+        <div id="banner_graphic_002"></div>
+        <div id="banner_graphic_003"></div>
+        <div id="banner_graphic_004"></div>
+        <div id="banner_graphic_005"></div>
+        <div id="banner_graphic_006"></div>
+      </div>
+      <div class="banner_text">
+        Accelerating AI innovation in manufacturing industry-specific LLM
+        strategies
+      </div>
+      <div class="banner_graphic">
+        <div id="banner_graphic_006"></div>
+        <div id="banner_graphic_005"></div>
+        <div id="banner_graphic_004"></div>
+        <div id="banner_graphic_003"></div>
+        <div id="banner_graphic_002"></div>
+        <div id="banner_graphic_001"></div>
+      </div>
+    </div>
+    <div class="section_text">
+      <div class="section_main_text">
+        LLM 성능을 최대한 활용하는 다양한 Agent 제공​
+      </div>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/swiper01.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/swiper02.png" alt="" />
+        </div>
+        <div class="swiper-slide"><img src="images/swiper03.png" alt="" /></div>
+        <div class="swiper-slide"><img src="images/swiper04.png" alt="" /></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <section class="section_arm">
+      <div class="section_arm_main_title">
+        Industry-specific <span>LLM Agent</span>
+      </div>
+      <div class="section_arm_desc_wrapper">
+        <div>
+          Our AI platform, Runway, makes it easy for users to experiment,
+          manage, monitor, and deploy multiple custom large-scale language
+          models (LLMs). By consolidating and managing complex AI tasks on a
+          single platform, users can work efficiently through an intuitive
+          interface. This significantly reduces the time spent developing and
+          operating models and maximizes productivity.
+        </div>
+        <div>
+          Our AI platform offers flexible deployment options. It can be
+          installed and operated in the cloud as well as on-premises
+          environments, allowing you to build the platform to fit your
+          organization's specific needs and security policies. This enables
+          organizations to adopt the latest AI technologies while leveraging
+          existing infrastructure
+        </div>
+        <div>
+          Our solutions are fully secured, so you can operate reliably without
+          worrying about data breaches. Designed with data security as a top
+          priority, our platform protects your organization's sensitive data and
+          ensures reliable performance. This allows businesses to utilize AI
+          technology while keeping their sensitive data secure.
+        </div>
+      </div>
+      <div class="circle" id="circle_01"></div>
+      <div class="circle" id="circle_02"></div>
+      <div class="parallax_img" id="parallax_001">
+        <img src="images/diamond.svg" alt="" />
+      </div>
+      <div class="parallax_img" id="parallax_002">
+        <img src="images/star01.svg" alt="" />
+      </div>
+      <div class="parallax_img" id="parallax_003">
+        <img src="images/star02.svg" alt="" />
+      </div>
+      <div class="parallax_img" id="parallsax_004">
+        <img src="images/robotarm.png" alt="" />
+      </div>
+    </section>
+    <section class="section_002">
+      <div class="section_text">
+        <div class="section_main_text">2.Targeted RAG</div>
+        <div class="section_sub_text">
+          Targeted RAG (Retrieval-Augmented Generation) 로 현장 맞춤 정보 신속
+          제공​
+        </div>
+      </div>
+      <div class="target_rag_img">
+        <img src="images/targetRAG.png" alt="" />
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        centeredSlides: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <script src="mouse_move.js"></script>
+  </body>
+</html>
