@@ -125,14 +125,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 const parallax001 = document.getElementById("parallax_001");
 const parallax002 = document.getElementById("parallax_002");
+const parallax002Img = document.querySelector("#parallax_002 img");
 const parallax003 = document.getElementById("parallax_003");
 const parallax003Img = document.querySelector("#parallax_003 img");
-window.addEventListener("scroll", () => {
-  parallax001.style.transform = `translateY(${window.scrollY * -1.2}px)`;
-  parallax002.style.transform = `rotate(${
-    window.scrollY / 360
-  }deg) translateY(${window.scrollY * -2}px)`;
 
-  parallax003.style.transform = `translateY(${window.scrollY * -1.2}px)`;
-  parallax003Img.style.transform = `rotate(${window.scrollY / 2}deg)`;
-});
+function applyParallaxEffect() {
+  const scrollY = window.scrollY || window.pageYOffset; // 모바일 호환성
+  // parallax001.style.transform = `translateY(${scrollY * -1.2}px)`;
+  parallax002.style.transform = `translateY(${scrollY * -1.2}px)`;
+  parallax002Img.style.transform = `rotate(${scrollY / 2}deg)`;
+  // parallax003.style.transform = `translateY(${scrollY * -1.2}px)`;
+  parallax003Img.style.transform = `rotate(${scrollY / 2}deg)`;
+}
+
+window.addEventListener("scroll", applyParallaxEffect);
+window.addEventListener("resize", applyParallaxEffect); // 모바일에서
+
+// 모바일에서 스크롤 이벤트가 원활하게 동작하도록 하는 추가 코드
+function isMobile() {
+  return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+}
+
+if (isMobile()) {
+  window.addEventListener("touchmove", applyParallaxEffect);
+}

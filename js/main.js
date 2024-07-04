@@ -28,8 +28,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const section002 = document.getElementById("section002");
+  const container = document.querySelector(".container");
   const bannerText = document.querySelector(".banner_text");
-
+  const bars = document.querySelectorAll(".bar");
   window.addEventListener("scroll", function () {
     const bannerRect = bannerText.getBoundingClientRect();
     const windowHeight = window.innerHeight;
@@ -37,22 +38,27 @@ document.addEventListener("DOMContentLoaded", function () {
     const bannerMidpoint = bannerRect.top + bannerRect.height / 1.5;
 
     if (bannerMidpoint < windowHeight / 1.5) {
-      section002.style.backgroundColor = "#9656ff";
+      section002.style.backgroundColor = "#000";
+      container.style.backgroundColor = "#000";
+      bannerText.style.color = "#fff";
+      bars.forEach((bar) => (bar.style.backgroundColor = "#fff")); // bar 배경색 변경
     } else {
       section002.style.backgroundColor = "#fff";
+      container.style.backgroundColor = "#fff";
+      bannerText.style.color = "#282c35";
+      bars.forEach((bar) => (bar.style.backgroundColor = "#282c35")); // bar 배경색 변경
     }
   });
 });
 const parallax001 = document.getElementById("parallax_001");
 const parallax002 = document.getElementById("parallax_002");
 const parallax003 = document.getElementById("parallax_003");
+const parallax002Img = document.querySelector("#parallax_002 img");
 const parallax003Img = document.querySelector("#parallax_003 img");
 window.addEventListener("scroll", () => {
   parallax001.style.transform = `translateY(${window.scrollY * -1.2}px)`;
-  parallax002.style.transform = `rotate(${
-    window.scrollY / 360
-  }deg) translateY(${window.scrollY * -2}px)`;
-
-  parallax003.style.transform = `translateY(${window.scrollY * -1.2}px)`;
+  parallax002.style.transform = `translateY(${window.scrollY * -2.3}px)`;
+  parallax002Img.style.transform = `rotate(${window.scrollY / 2}deg)`;
+  parallax003.style.transform = `translateY(${window.scrollY * -0.7}px)`;
   parallax003Img.style.transform = `rotate(${window.scrollY / 2}deg)`;
 });
