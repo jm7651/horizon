@@ -27,7 +27,10 @@ body {
   position: relative;
   height: unset;
 }
-
+body.no-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
 .nav {
   display: flex;
   align-items: center;

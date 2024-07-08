@@ -1,0 +1,89 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.loading_counter {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 102;
+  color: #fff;
+  padding: 10vw;
+  font-size: 40vw;
+  box-sizing: border-box;
+  font-family: "Prompt", sans-serif;
+}
+.loading_block_wrapper {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+.loading_block {
+  position: fixed;
+  width: 100%;
+  height: 5vh;
+  background: #000;
+  z-index: 101;
+}
+.block-1 {
+  top: 0;
+}
+.block-2 {
+  top: 5vh;
+}
+.block-3 {
+  top: 10vh;
+}
+.block-4 {
+  top: 15vh;
+}
+.block-5 {
+  top: 20vh;
+}
+.block-6 {
+  top: 25vh;
+}
+.block-7 {
+  top: 30vh;
+}
+.block-8 {
+  top: 35vh;
+}
+.block-9 {
+  top: 40vh;
+}
+.block-10 {
+  top: 45vh;
+}
+.block-11 {
+  top: 50vh;
+}
+.block-12 {
+  top: 55vh;
+}
+.block-13 {
+  top: 60vh;
+}
+.block-14 {
+  top: 65vh;
+}
+.block-15 {
+  top: 70vh;
+}
+.block-16 {
+  top: 75vh;
+}
+.block-17 {
+  top: 80vh;
+}
+.block-18 {
+  top: 85vh;
+}
+.block-19 {
+  top: 90vh;
+}
+.block-20 {
+  top: 95vh;
+}
