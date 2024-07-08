@@ -14,6 +14,7 @@
   font-size: 40vw;
   box-sizing: border-box;
   font-family: "Prompt", sans-serif;
+  pointer-events: none;
 }
 .loading_block_wrapper {
   width: 100%;
@@ -23,7 +24,7 @@
 .loading_block {
   position: fixed;
   width: 100%;
-  height: 5vh;
+  height: 6vh;
   background: #000;
   z-index: 101;
 }

@@ -229,3 +229,17 @@ horizonImgSection.forEach((horizonImgSection) => {
 //     markers: false,
 //   },
 // });
+const parallax001 = document.getElementById("parallax_001");
+const parallax002 = document.getElementById("parallax_002");
+const parallax003 = document.getElementById("parallax_003");
+const parallax005 = document.getElementById("parallax_005");
+const parallax002Img = document.querySelector("#parallax_002 img");
+const parallax003Img = document.querySelector("#parallax_003 img");
+window.addEventListener("scroll", () => {
+  parallax001.style.transform = `translateY(${window.scrollY * -1.2}px)`;
+  parallax002.style.transform = `translateY(${window.scrollY * -0.8}px)`;
+  parallax002Img.style.transform = `rotate(${window.scrollY / 2}deg)`;
+  parallax003.style.transform = `translateY(${window.scrollY * -0.6}px)`;
+  parallax003Img.style.transform = `rotate(${window.scrollY / 2}deg)`;
+  parallax005.style.transform = `translateY(${window.scrollY * -0.7}px)`;
+});
