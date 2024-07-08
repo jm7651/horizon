@@ -145,6 +145,7 @@ body {
   height: 100vh;
   background-color: #fff;
   transition: background-color 1s ease;
+  overflow: hidden;
 }
 .banner {
   position: relative;
@@ -331,6 +332,7 @@ body {
   display: flex;
   height: 100vh;
   background: yellow;
+  overflow: hidden;
 }
 .targetrag_architecture {
   width: 1280px;
