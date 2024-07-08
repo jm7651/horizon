@@ -3,20 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link
       href="
-  https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
-  "
+https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
+"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/abc_style.css" />
-    <title>Sticky Section Example</title>
+    <link rel="stylesheet" href="css/loading.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="loading_counter">0</div>
+    <div class="loading_block_wrapper">
+      <div class="loading_block block-1"></div>
+      <div class="loading_block block-2"></div>
+      <div class="loading_block block-3"></div>
+      <div class="loading_block block-4"></div>
+      <div class="loading_block block-5"></div>
+      <div class="loading_block block-6"></div>
+      <div class="loading_block block-7"></div>
+      <div class="loading_block block-8"></div>
+      <div class="loading_block block-9"></div>
+      <div class="loading_block block-10"></div>
+      <div class="loading_block block-11"></div>
+      <div class="loading_block block-12"></div>
+      <div class="loading_block block-13"></div>
+      <div class="loading_block block-14"></div>
+      <div class="loading_block block-15"></div>
+      <div class="loading_block block-16"></div>
+      <div class="loading_block block-17"></div>
+      <div class="loading_block block-18"></div>
+      <div class="loading_block block-19"></div>
+      <div class="loading_block block-20"></div>
+    </div>
     <div class="nav">
       <img src="images/horizon_logo.svg" alt="" />
     </div>
-    <div class="section" id="section001">
+    <div class="firstContainer" id="section001">
       <div class="main_title">
         <span>Horizon</span>
         <span class="image" id="star10"
@@ -24,7 +48,7 @@
         ><span>in</span
         ><span class="image"
           ><img src="images/main_title_deco02.svg" alt="" /></span
-        ><span>industry</span>
+        ><span class="industry">industry</span>
       </div>
       <div class="sub_title">
         제조업의 AI 혁신을 가속하는​ 산업 특화 LLM 'Horizon'을 소개합니다
@@ -44,107 +68,179 @@
         </video>
       </div>
     </div>
-    <div class="section">
-      <div class="firstContainer banner" id="section002">
-        <div class="graphic_bar" id="graphic_bar1"></div>
-        <div class="banner_text">
-          <div class="marquee_wrap">
-            <div class="marquee_box box1">
-              <span class="marquee_text"
-                >사 Accelerating AI innovation in manufacturing
-                industry-specific LLM strategies</span
-              >
-              <img id="parallax_004" src="images/robotarm.png" alt="" />
-            </div>
-            <div class="marquee_box box2">
-              <span class="marquee_text">
-                Accelerating AI innovation in manufacturing industry-specific
-                LLM strategies</span
-              >
-              <img id="parallax_004" src="images/robotarm.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="graphic_bar" id="graphic_bar1"></div>
-        <div class="parallax_img" id="parallax_001">
-          <img src="images/diamond.svg" alt="" />
-        </div>
-        <div class="parallax_img" id="parallax_002">
-          <img src="images/star01.svg" alt="" />
-        </div>
-        <div class="parallax_img" id="parallax_003">
-          <img src="images/star02.svg" alt="" />
+    <div class="container">
+      <div class="description panel blue">
+        <div>
+          제조업의 AI 혁신을 가속하는<br />​<span>산업 특화 LLM 전략</span>
+          <div class="scroll-down"><div class="arrow"></div></div>
         </div>
       </div>
-      <div class="container">
-        <div class="description panel blue">
-          <div>
-            제조업의 AI 혁신을 가속하는<br />​<span>산업 특화 LLM 전략</span>
-            <div class="scroll-down"><div class="arrow"></div></div>
-          </div>
-        </div>
 
-        <section class="panel red">
-          <img src="images/swiper01.png" alt="" />
-        </section>
-        <section class="panel orange">
-          <img src="images/swiper02.png" alt="" />
-        </section>
-        <section class="panel purple">
-          <img src="images/swiper03.png" alt="" />
-        </section>
-        <section class="panel purple">
-          <img src="images/swiper04.png" alt="" />
-        </section>
+      <section class="panel red">
+        <img src="images/swiper01.png" alt="" />
+      </section>
+      <section class="panel orange">
+        <img src="images/swiper02.png" alt="" />
+      </section>
+      <section class="panel purple">
+        <img src="images/swiper03.png" alt="" />
+      </section>
+      <section class="panel purple">
+        <img src="images/swiper04.png" alt="" />
+      </section>
+    </div>
+    <div class="lastContainer split_parent">
+      <div class="section_text">
+        <div class="section_main_text split">Targeted RAG</div>
+        <div class="section_sub_text">
+          Targeted RAG (Retrieval-Augmented Generation) 로 현장 맞춤 정보 신속
+          제공​ ​
+        </div>
       </div>
-      <div class="lastContainer">
-        <div class="section_text">
-          <div class="section_main_text">Targeted RAG ​</div>
-          <div class="section_sub_text">
-            Targeted RAG (Retrieval-Augmented Generation) 로 현장 맞춤 정보 신속
-            제공​ ​
+      <div class="video_section">
+        <video
+          class="targetrag_video"
+          width="100%"
+          src="target_rag.mp4"
+          type="video/mp4"
+          autoplay=""
+          muted=""
+          loop=""
+          playsinline=""
+        >
+          <source src="traget_rag.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="section_desc_wrapper">
+        <div>
+          특정 목적에 맞춰 데이터베이스를 선정하고,
+          <span
+            >해당 데이터베이스에 특화된 RAG(생성 및 검색) 모델을 적용하여 관련성
+            높은 정보를 제공</span
+          >할 수 있습니다.
+        </div>
+        <div>
+          특화된 데이터베이스를 통해 RAG 모델이 더 신뢰할 수 있는 정보에
+          접근하게 되어
+          <span
+            >잘못된 정보 생성(할루시네이션)을 방지하고, 보다 정확한 답변을
+            빠르게 제공</span
+          >합니다.
+        </div>
+        <div>
+          <span
+            >산업 현장에서 실시간으로 정확하고 신뢰할 수 있는 정보를 제공합니다. </span
+          >이는 기업의 효율성과 생산성을 크게 향상시킵니다.
+        </div>
+      </div>
+      <div class="horizon_img_section">
+        <img src="images/targetrag.svg" alt="" />
+      </div>
+      <!-- <div class="targetrag_architecture">
+          <img src="images/targetrag.svg" alt="" />
+        </div>
+      </div>
+      <div>-->
+    </div>
+
+    <div>
+      <section class="marquee">
+        <div class="graphic_bar" id="graphic_bar1"></div>
+        <div class="marquee__inner" aria-hidden="true" ref="inner">
+          <div class="marquee__part">
+            Accelerating AI innovation in manufacturing industry-specific LLM
+            strategies
+            <img id="parallax_004" src="images/robotarm.png" alt="" />
+          </div>
+          <div class="marquee__part">
+            Accelerating AI innovation in manufacturing industry-specific LLM
+            strategies
+            <img id="parallax_004" src="images/robotarm.png" alt="" />
+          </div>
+          <div class="marquee__part">
+            Accelerating AI innovation in manufacturing industry-specific LLM
+            strategies
+            <img id="parallax_004" src="images/robotarm.png" alt="" />
+          </div>
+          <div class="marquee__part">
+            Accelerating AI innovation in manufacturing industry-specific LLM
+            strategies
+            <img id="parallax_004" src="images/robotarm.png" alt="" />
+          </div>
+          <div class="marquee__part">
+            Accelerating AI innovation in manufacturing industry-specific LLM
+            strategies
+            <img id="parallax_004" src="images/robotarm.png" alt="" />
+          </div>
+          <div class="marquee__part">
+            Accelerating AI innovation in manufacturing industry-specific LLM
+            strategies
+            <img id="parallax_004" src="images/robotarm.png" alt="" />
           </div>
         </div>
-        <div class="targetrag_video_section">
+        <div class="graphic_bar" id="graphic_bar1"></div>
+      </section>
+    </div>
+    <div class="section_container bg_black">
+      <div class="section_text">
+        <div class="section_main_text split color_f5f5f7">Meta filtering</div>
+        <div class="section_sub_text color_f5f5f7">
+          메타 데이터 파일의 내용과 질문 쿼리의 유사도를 측정하여 유사도가 가장
+          높은 파일과 매칭​
+        </div>
+      </div>
+      <div class="count_box hidden">
+        <div class="number" id="number1">0.000</div>
+        <div class="number" id="number2">0.000</div>
+        <div class="number" id="number3">0.000</div>
+      </div>
+      <div class="meta_title">Top-3기준 <span>99% 정확도</span> 달성</div>
+      <div class="horizon_img_section">
+        <img src="images/metadata_img.svg" alt="" />
+      </div>
+    </div>
+    <div class="section_container">
+      <div class="section_text">
+        <div class="section_main_text split">LLMOps 체계​</div>
+        <div class="section_sub_text">
+          쉽고 안전한 커스텀 LLM 모델 운영 및 관리​
+        </div>
+        <div class="video_section">
           <video
             class="targetrag_video"
             width="100%"
-            src="target_rag.mp4"
+            src="llmops.mp4"
             type="video/mp4"
             autoplay=""
             muted=""
             loop=""
             playsinline=""
           >
-            <source src="traget_rag.mp4" type="video/mp4" />
+            <source src="llmops.mp4" type="video/mp4" />
           </video>
         </div>
-        <div class="section_arm_desc_wrapper subtitle">
+        <div class="section_desc_wrapper">
           <div>
-            특정 목적에 맞춰 데이터베이스를 선정하고, 해당 데이터베이스에 특화된
-            RAG(생성 및 검색) 모델을 적용하여 관련성 높은 정보를 제공할 수
-            있습니다.
+            다수의 커스텀 LLM 모델의 실험, 관리, 모니터링, 배포를
+            <span>단일 AI 플랫폼(Runway)</span>쉽고 직관적으로 운영합니다
           </div>
           <div>
-            특화된 데이터베이스를 통해 RAG 모델이 더 신뢰할 수 있는 정보에
-            접근하게 되어 잘못된 정보 생성(할루시네이션)을 방지하고, 보다 정확한
-            답변을 빠르게 제공합니다.
+            온프레미스를 포함​
+            <span> 기업이 원하는 환경</span>에 구축합니다.
           </div>
           <div>
-            이러한 접근 방식은 산업 현장에서 실시간으로 정확하고 신뢰할 수 있는
-            정보를 제공하는 대화형 애플리케이션을 개발하는 데 중요한 역할을
-            합니다. 이는 기업의 효율성과 생산성을 크게 향상시킵니다.
+            데이터 유출에 대한 염려없이 <span>​안정적인 운영</span>이 가능합니다
           </div>
-        </div>
-        <div class="horizon_img_section">
-          <img src="images/targetrag.svg" alt="" />
         </div>
       </div>
     </div>
-
-    <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
     <script src="js/horizon_scroll.js"></script>
+    <script src="js/count.js"></script>
+    <script src="js/loading.js"></script>
+    <!-- <script src="js/split.js"></script> -->
   </body>
 </html>
