@@ -1,3 +1,7 @@
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
+
 function startLoader() {
   let counterElement = document.querySelector(".loading_counter");
   let currentValue = 0;
@@ -15,8 +19,11 @@ function startLoader() {
     let delay = Math.floor(Math.random() * 200) + 50;
     setTimeout(updateCounter, delay);
   }
+
   updateCounter();
 }
+
+document.body.classList.add("no-scroll"); // 로딩 시작 시 스크롤 금지
 
 startLoader();
 
