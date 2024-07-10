@@ -63,9 +63,6 @@ body.no-scroll {
   gap: 32px;
 }
 .main_title_wrapper {
-  position: absolute;
-  top: 8%;
-  z-index: 10;
 }
 .main_title {
   display: flex;
@@ -89,10 +86,6 @@ body.no-scroll {
 }
 #video_section {
   display: inline-block;
-  gap: 10px;
-  position: absolute;
-  top: 65%;
-  transform: translate(0, -50%);
   text-align: center;
 }
 .video {
@@ -242,8 +235,8 @@ body.no-scroll {
 #parallax_005 {
   width: 6vw;
   min-width: 50px;
-  top: 70%;
-  right: 10%;
+  top: 180%;
+  right: -40%;
   z-index: 12;
   transform: translate(-0%, -50%);
   transform-origin: 50% 50%;

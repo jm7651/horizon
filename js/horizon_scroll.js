@@ -171,7 +171,7 @@ videoSections.forEach((videoSection) => {
   gsap.from(videoSection, {
     yPercent: 30,
     autoAlpha: 0,
-    duration: 2,
+    duration: 1,
     ease: "circ.out",
     stagger: 1,
     scrollTrigger: {
@@ -247,11 +247,13 @@ window.addEventListener("scroll", () => {
   const parallax006Position = yPosition - window.scrollY;
 
   parallax001.style.transform = `translateY(${window.scrollY * -1}px)`;
-  parallax002.style.transform = `translateY(${window.scrollY * -1.3}px)`;
+  parallax002.style.transform = `translateY(${window.scrollY * -0.7}px)`;
   parallax002Img.style.transform = `rotate(${window.scrollY / 2}deg)`;
   parallax003.style.transform = `translateY(${window.scrollY * -0.5}px)`;
   parallax003Img.style.transform = `rotate(${window.scrollY / 2}deg)`;
-  parallax005.style.transform = `translateY(${window.scrollY * -0.2}px)`;
+  parallax005.style.transform = `translate(${window.scrollY * -0.4}px,${
+    window.scrollY * -0.8
+  }px) rotate(-30deg)`;
   parallax006.style.transform = `translate(-50%,${
     parallax006Position * -1.5
   }px)`;
@@ -260,7 +262,7 @@ window.addEventListener("scroll", () => {
   const videoRect = llmopsVideo.getBoundingClientRect();
   const parallaxRect = parallax006.getBoundingClientRect();
   const metadataRect = metadataSection.getBoundingClientRect();
-  const videoThreshold = videoRect.top + videoRect.height * 0.4; // llmopsVideo의 30% 위치
+  const videoThreshold = videoRect.top + videoRect.height * 0.5; // llmopsVideo의 30% 위치
   const metaThreshold = metadataRect.top + metadataRect.height * 0.7;
   if (
     parallaxRect.top < metaThreshold ||
