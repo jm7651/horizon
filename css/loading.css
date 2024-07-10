@@ -8,15 +8,22 @@
   width: 100%;
   height: calc(var(--vh) * 100);
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  z-index: 102;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
   color: #fff;
   padding: 10vw;
   font-size: 40vw;
   box-sizing: border-box;
   font-family: "Prompt", sans-serif;
   pointer-events: none;
+}
+.lottie-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
 }
 .loading_block_wrapper {
   width: 100%;
@@ -89,4 +96,16 @@
 }
 .block-20 {
   top: 95vh;
+}
+#lottie {
+  width: 80%; /* 부모 요소의 50% 너비 */
+  height: 80%; /* 부모 요소의 50% 높이 */
+}
+@media screen and (max-width: 450px) {
+  .loading_counter {
+    width: 100%;
+  }
+  .loading_block_container {
+    width: 100%;
+  }
 }

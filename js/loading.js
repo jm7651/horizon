@@ -41,3 +41,16 @@ gsap.to(".loading_block", {
   },
   ease: "power4.inOut",
 });
+gsap.to(".lottie-container", {
+  opacity: "0",
+  duration: 0.8,
+  delay: 3.5,
+  ease: "power4.inOut",
+});
+var animation = lottie.loadAnimation({
+  container: document.getElementById("lottie"), // the dom element that will contain the animation
+  renderer: "svg",
+  loop: false,
+  autoplay: true,
+  path: "images/horizon.json", // the path to the animation json
+});

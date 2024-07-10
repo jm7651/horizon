@@ -251,9 +251,7 @@ window.addEventListener("scroll", () => {
   parallax002Img.style.transform = `rotate(${window.scrollY / 2}deg)`;
   parallax003.style.transform = `translateY(${window.scrollY * -0.5}px)`;
   parallax003Img.style.transform = `rotate(${window.scrollY / 2}deg)`;
-  parallax005.style.transform = `translate(${window.scrollY * -0.4}px,${
-    window.scrollY * -0.8
-  }px) rotate(-30deg)`;
+  parallax005.style.transform = `translateY(${window.scrollY * -0.8}px)`;
   parallax006.style.transform = `translate(-50%,${
     parallax006Position * -1.5
   }px)`;
@@ -275,4 +273,19 @@ window.addEventListener("scroll", () => {
     // parallax006이 그 사이에 있을 때
     parallax006.style.opacity = "1";
   }
+});
+const contents = document.querySelectorAll(".final_contents");
+
+contents.forEach((content, index) => {
+  gsap.to(content, {
+    opacity: 1, // 최종 상태는 보이도록 설정
+    scrollTrigger: {
+      trigger: content, // 각 content 요소를 트리거로 설정
+      start: "top 75%", // 트리거가 시작되는 시점 (뷰포트의 75% 지점에서 시작)
+      end: "top 50%", // 트리거가 끝나는 시점 (뷰포트의 50% 지점에서 끝)
+      toggleActions: "play none none reverse", // 스크롤에 따라 애니메이션 재생 및 역재생 설정
+      onEnter: () => content.classList.add("show"), // 스크롤 진입 시 show 클래스 추가
+      onLeaveBack: () => content.classList.remove("show"), // 스크롤 되돌아갈 때 show 클래스 제거
+    },
+  });
 });
