@@ -260,7 +260,7 @@ window.addEventListener("scroll", () => {
   const videoRect = llmopsVideo.getBoundingClientRect();
   const parallaxRect = parallax006.getBoundingClientRect();
   const metadataRect = metadataSection.getBoundingClientRect();
-  const videoThreshold = videoRect.top + videoRect.height * 0.2; // llmopsVideo의 30% 위치
+  const videoThreshold = videoRect.top + videoRect.height * 0.4; // llmopsVideo의 30% 위치
   const metaThreshold = metadataRect.top + metadataRect.height * 0.7;
   if (
     parallaxRect.top < metaThreshold ||
@@ -274,65 +274,3 @@ window.addEventListener("scroll", () => {
     parallax006.style.opacity = "1";
   }
 });
-function updateFooterMargin() {
-  const video = document.querySelector(".mockup_video");
-  const footer = document.querySelector("footer");
-  const videoHeight = video.offsetHeight;
-  const initialHeight = window.innerHeight * 0.6; // 초기 비디오 높이
-  const addedHeight = videoHeight - initialHeight;
-  const additionalMargin = window.innerHeight * 0.2; // 200px에 해당하는 비율을 vh로 변환
-  footer.style.marginTop = addedHeight + additionalMargin + "px";
-}
-
-function initAnimations() {
-  if (window.innerWidth > 768) {
-    // 데스크탑 버전
-    gsap.to(".mockup_video", {
-      scrollTrigger: {
-        trigger: "#mockup_container",
-        start: "top top",
-        end: "bottom top",
-        scrub: true,
-        pin: true,
-        onUpdate: (self) => {
-          updateFooterMargin();
-        },
-        onEnter: () => {
-          gsap.to(".mockup_title", {
-            opacity: 1,
-            transform: "translateY(0)",
-            duration: 1,
-          });
-        },
-        onLeaveBack: () => {
-          gsap.to(".mockup_title", {
-            opacity: 0,
-            transform: "translateY(20px)",
-            duration: 1,
-          });
-        },
-      },
-      width: "100%",
-      ease: "none",
-    });
-  } else {
-    // 모바일 버전
-    const video = document.querySelector(".mockup_video");
-    video.style.width = "100%"; // 모바일에서는 항상 100%
-    footer.style.marginTop = "0px"; // 모바일에서는 margin-top 조정 안함
-  }
-}
-
-// 초기 애니메이션 설정
-initAnimations();
-
-// 윈도우 크기 변경 시 애니메이션 재설정
-window.addEventListener("resize", () => {
-  ScrollTrigger.refresh(); // ScrollTrigger를 새로고침하여 변경 사항 반영
-  initAnimations(); // 애니메이션 초기화
-});
-
-// 윈도우 크기 변경 시 마진 업데이트 (데스크탑만)
-if (window.innerWidth > 768) {
-  window.addEventListener("resize", updateFooterMargin);
-}

@@ -404,8 +404,8 @@ body.no-scroll {
   position: relative;
 }
 #mockup_container {
-  padding: 120px 20px;
-  background: #f1f1f1;
+  padding: 40px 20px 80px;
+  background: #000;
 }
 
 .section_container .section_sub_text {
@@ -469,6 +469,58 @@ body.no-scroll {
 .color_f5f5f7 {
   color: #f5f5f7;
 }
+.final_text_container {
+  padding: 60px 0;
+  background: #000;
+}
+.final_contents {
+  padding: 4px 20px;
+  display: flex;
+  align-items: stretch;
+  gap: 1vw;
+}
+.final_en_text {
+  font-size: 2vw;
+  font-weight: 700;
+  font-family: "Prompt", sans-serif;
+  color: #fff;
+  line-height: 130%; /* 156px */
+  display: flex;
+  align-items: center;
+}
+.final_kr_text {
+  font-size: 2vw;
+  font-weight: 900;
+  color: #fff;
+  line-height: 130%; /* 156px */
+  display: flex;
+  align-items: center;
+}
+#final_img001 {
+  width: 7vw;
+}
+.final_contents img {
+  width: 100%;
+}
+.final_gra01 {
+  display: flex;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #ff088e 0%, #faff00 100%);
+  flex: 1; /* 부모 요소의 높이를 채우도록 설정 */
+}
+#final_img003 {
+  display: flex;
+  align-items: center;
+  width: 18vw;
+}
+#final_img005,
+#final_img006 {
+  width: 5.5vw;
+  display: flex;
+  align-items: center;
+}
 .horizon_container {
   display: flex;
   flex-direction: column;
@@ -525,7 +577,7 @@ body.no-scroll {
     left: 20px;
   }
   .main_title_wrapper {
-    top: 22%;
+    top: 18%;
   }
   .main_title {
     font-size: 12vw;
@@ -649,5 +701,21 @@ body.no-scroll {
     font-size: 8vw;
     padding: 20px;
     box-sizing: border-box;
+  }
+  #final_img002,
+  #final_img003,
+  #final_img004 {
+    width: 16vw;
+  }
+  #final_img005,
+  #final_img006 {
+    width: 6vw;
+  }
+  #final_img007 {
+    width: 14vw;
+  }
+  #final_img008,
+  #final_img009 {
+    width: 18vw;
   }
 }
