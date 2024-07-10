@@ -711,4 +711,7 @@ body.no-scroll {
   #final_img009 {
     width: 18vw;
   }
+  #parallax_005 {
+    right: -160%;
+  }
 }
