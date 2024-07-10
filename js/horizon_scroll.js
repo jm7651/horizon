@@ -20,7 +20,7 @@ mm.add("(max-width:500px)", () => {
     scrollTrigger: {
       trigger: ".container",
       pin: true,
-      scrub: 1, // 애니메이션 반응을 매우 빠르게 설정
+      scrub: 5, // 애니메이션 반응을 매우 빠르게 설정
       snap: {
         snapTo: 1 / (sections.length - 1), // 패널 간 스냅 설정
         duration: { min: 0.2, max: 0.5 }, // 스냅 애니메이션의 최소 및 최대 지속 시간 설정
