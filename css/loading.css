@@ -13,7 +13,7 @@
   z-index: 1001;
   color: #fff;
   padding: 10vw;
-  font-size: 40vw;
+  font-size: 10vw;
   box-sizing: border-box;
   font-family: "Prompt", sans-serif;
   pointer-events: none;
@@ -24,6 +24,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
+  pointer-events: none;
+  width: 20% !important;
 }
 .loading_block_wrapper {
   width: 100%;
@@ -107,5 +109,11 @@
   }
   .loading_block_container {
     width: 100%;
+  }
+  .loading_counter {
+    font-size: 20vw;
+  }
+  .lottie-container {
+    width: 50% !important;
   }
 }
