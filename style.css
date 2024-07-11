@@ -452,7 +452,8 @@ body.no-scroll {
   width: 100%;
 }
 #comparison_section {
-  background: #f1f1f1;
+  background: #0e100f;
+  color: #f5f5f7;
 }
 .split > span {
   display: inline-block;
@@ -500,19 +501,27 @@ body.no-scroll {
 }
 .final_contents img {
   width: 100%;
+  border-radius: 32px;
 }
 .final_gra01 {
   display: flex;
   width: 100%;
-  max-width: 320px;
   border-radius: 20px;
   background: linear-gradient(90deg, #ff088e 0%, #faff00 100%);
   flex: 1; /* 부모 요소의 높이를 채우도록 설정 */
 }
+#final_img002,
+#final_img004,
+#final_img007 {
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  overflow: hidden;
+}
 #final_img003 {
   display: flex;
   align-items: center;
-  width: 18vw;
+  width: 12vw;
 }
 #final_img005,
 #final_img006 {
@@ -533,7 +542,7 @@ body.no-scroll {
   padding: 8rem;
   gap: 8rem;
   align-self: stretch;
-  background: #eee1ff;
+  background: #0e100f;
 }
 .horizon_footer_wrapper {
   display: flex;
@@ -567,7 +576,7 @@ body.no-scroll {
   gap: 12px;
 }
 .footer_text {
-  color: #5b738e;
+  color: #fff6ff;
   font-size: 16px;
   font-weight: 400;
   line-height: 130%;
