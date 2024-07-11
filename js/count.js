@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
           box.classList.remove("hidden");
           box.classList.add("visible");
 
-          const totalDuration = 2000; // 모든 애니메이션의 총 지속 시간 (ms)
+          const totalDuration = 1000; // 모든 애니메이션의 총 지속 시간 (ms)
           let animationsFinished = 0;
 
           numbers.forEach((numberElement) => {
