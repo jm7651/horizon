@@ -79,7 +79,7 @@ body.no-scroll {
   justify-content: center;
 }
 .sub_title {
-  font-size: 2vw;
+  font-size: 1.6vw;
   font-weight: 400;
   line-height: 150%;
   color: var(--sub_text_color);
@@ -152,7 +152,7 @@ body.no-scroll {
   flex-wrap: nowrap;
   align-items: center;
   gap: 40px;
-  background-color: #edeaf1;
+  background-color: #f0f0f0;
   overflow: hidden;
 }
 
@@ -346,6 +346,10 @@ body.no-scroll {
 .wh_color {
   color: #fff;
 }
+.purple_text {
+  color: #cb71ff;
+  font-weight: 700;
+}
 .panel {
   position: relative;
   flex: 0 0 auto; /* 패널을 가로로 배치하기 위해 설정 */
@@ -403,8 +407,8 @@ body.no-scroll {
   position: relative;
 }
 #mockup_container {
-  padding: 40px 20px 80px;
-  background: #0e100f;
+  padding: 40px 20px 200px;
+  background: #8f41bf;
 }
 
 .section_container .section_sub_text {
@@ -472,7 +476,7 @@ body.no-scroll {
 }
 .final_text_container {
   padding: 60px 0;
-  background: #0e100f;
+  background: linear-gradient(180deg, #0e0f0f 0%, #8f41bf 100%);
 }
 .final_contents {
   padding: 4px 3vw;
@@ -487,7 +491,7 @@ body.no-scroll {
 }
 .final_en_text {
   font-size: 2vw;
-  font-weight: 700;
+  font-weight: 500;
   font-family: "Prompt", sans-serif;
   color: #fff6ff;
   line-height: 130%; /* 156px */
@@ -496,14 +500,14 @@ body.no-scroll {
 }
 .final_kr_text {
   font-size: 2vw;
-  font-weight: 900;
+  font-weight: 700;
   color: #fff6ff;
   line-height: 130%; /* 156px */
   display: flex;
   align-items: center;
 }
 #final_img001 {
-  width: 7vw;
+  width: 5vw;
 }
 .final_contents img {
   width: 100%;
@@ -512,6 +516,7 @@ body.no-scroll {
 .final_gra01 {
   display: flex;
   width: 100%;
+  max-width: 20vw;
   border-radius: 20px;
   background: linear-gradient(90deg, #ff088e 0%, #faff00 100%);
 
@@ -524,11 +529,12 @@ body.no-scroll {
   align-items: center;
   border-radius: 12px;
   overflow: hidden;
+  width: 7vw;
 }
 #final_img003 {
   display: flex;
   align-items: center;
-  width: 12vw;
+  width: 7vw;
 }
 #final_img005,
 #final_img006 {
@@ -538,7 +544,7 @@ body.no-scroll {
 }
 #final_img008,
 #final_img009 {
-  width: 18vw;
+  width: 12vw;
   display: flex;
   align-items: center;
 }
@@ -549,7 +555,7 @@ body.no-scroll {
   padding: 8rem;
   gap: 8rem;
   align-self: stretch;
-  background: #0e100f;
+  background: #f0f0f0;
 }
 .horizon_footer_wrapper {
   display: flex;
@@ -566,7 +572,7 @@ body.no-scroll {
 }
 .foooter_video_wrapper {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 20px;
 }
 .footer_video {
@@ -592,7 +598,7 @@ body.no-scroll {
   gap: 12px;
 }
 .footer_text {
-  color: #fff6ff;
+  color: #282c35;
   font-size: 16px;
   font-weight: 400;
   line-height: 130%;
@@ -754,6 +760,9 @@ body.no-scroll {
   #parallax_006 img {
     width: 14vw;
   }
+  #mockup_container {
+    padding: 20px 20px 80px;
+  }
   .mockup_title {
     top: 0;
     opacity: 1;
@@ -784,7 +793,7 @@ body.no-scroll {
     right: 10%;
   }
   .footer_video {
-    width: 100%;
+    width: 50%;
     border-radius: 20px;
   }
 }

@@ -15,8 +15,8 @@ function setFontSize() {
     krfontSize = width / 17;
   } else {
     // 데스크톱 기준, 1024px 초과일 경우
-    enfontSize = width / 14;
-    krfontSize = width / 15;
+    enfontSize = width / 17;
+    krfontSize = width / 18;
   }
 
   finalEnText.forEach((element) => {

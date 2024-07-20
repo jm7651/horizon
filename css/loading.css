@@ -6,7 +6,9 @@
 .loading_counter {
   position: fixed;
   width: 100%;
-  height: calc(var(--vh) * 100);
+  height: calc(var(--vh) * 30);
+  top: 50%;
+  transform: translate(0, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +22,7 @@
 }
 .lottie-container {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
