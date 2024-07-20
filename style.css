@@ -746,9 +746,14 @@ body.no-scroll {
     font-size: 12vw;
   }
   .meta_title {
+    flex-direction: column;
     font-size: 12vw;
     line-height: 130%;
     word-break: keep-all;
+  }
+  .meta_title span {
+    display: flex;
+    width: 26vw;
   }
   .marquee__part {
     padding: 20px 0;
