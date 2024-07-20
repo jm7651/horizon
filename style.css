@@ -346,6 +346,7 @@ body.no-scroll {
   color: #fff;
 }
 .panel {
+  position: relative;
   flex: 0 0 auto; /* 패널을 가로로 배치하기 위해 설정 */
 
   height: 100vh; /* 패널의 높이를 화면 높이와 동일하게 설정 */
@@ -353,7 +354,10 @@ body.no-scroll {
   justify-content: center; /* 패널 내부 컨텐츠를 중앙 정렬 */
   align-items: center; /* 패널 내부 컨텐츠를 중앙 정렬 */
 }
-.panel p {
+.swiper_text_wrapper {
+  position: relative;
+}
+.swiper_text {
   position: absolute;
   top: 40px;
   left: 40px;
@@ -591,6 +595,31 @@ body.no-scroll {
   font-size: 16px;
   font-weight: 400;
   line-height: 130%;
+}
+@media (min-width: 1024px) and (orientation: landscape) {
+}
+@media (max-width: 1024px) and (orientation: portrait) {
+  .lastContainer,
+  .section_container {
+    width: 100%;
+    padding: 12rem 4rem;
+    box-sizing: border-box;
+  }
+  .section_text {
+    width: 100%;
+  }
+  .section_main_text,
+  .section_sub_text,
+  .video_section,
+  .section_desc_wrapper,
+  .horizon_img_section,
+  .count_box {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .meta_title {
+    font-size: 6vw;
+  }
 }
 @media screen and (max-width: 450px) {
   .box {

@@ -8,9 +8,13 @@ function setFontSize() {
   if (width <= 768) {
     // 모바일 기준, 768px 이하일 경우
     enfontSize = width / 16;
+    krfontSize = width / 18;
+  } else if (width > 768 && width <= 1200) {
+    // 패드 기준, 768px 초과 1024px 이하일 경우
+    enfontSize = width / 15;
     krfontSize = width / 17;
   } else {
-    // 데스크톱 기준, 768px 초과일 경우
+    // 데스크톱 기준, 1024px 초과일 경우
     enfontSize = width / 14;
     krfontSize = width / 15;
   }
