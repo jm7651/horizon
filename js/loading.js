@@ -27,30 +27,42 @@ document.body.classList.add("no-scroll"); // 로딩 시작 시 스크롤 금지
 
 startLoader();
 
-gsap.to(".loading_counter", {
-  delay: 3.5,
-  opacity: 0,
-});
-
-gsap.to(".loading_block", {
-  height: "0%",
-  duration: 0.8,
-  delay: 3.5,
-  stagger: {
-    amount: 0.5,
-  },
-  ease: "power4.inOut",
-});
-gsap.to(".lottie-container", {
-  opacity: "0",
-  duration: 0.8,
-  delay: 3.5,
-  ease: "power4.inOut",
-});
 var animation = lottie.loadAnimation({
   container: document.getElementById("lottie"), // the dom element that will contain the animation
   renderer: "svg",
   loop: false,
   autoplay: true,
   path: "images/horizon.json", // the path to the animation json
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid meet",
+  },
+});
+
+animation.addEventListener("complete", function () {
+  animation.goToAndStop(animation.totalFrames - 1, true); // 마지막 프레임 유지
+  setTimeout(function () {
+    gsap.to(".loading_counter", {
+      opacity: 0,
+    });
+
+    gsap.to(".loading_block", {
+      height: "0%",
+      duration: 0.8,
+      stagger: {
+        amount: 0.5,
+      },
+      ease: "power4.inOut",
+      onComplete: function () {
+        var mainVideo = document.getElementById("video_main");
+        console.log(mainVideo);
+        mainVideo.play();
+      },
+    });
+
+    gsap.to(".lottie-container", {
+      opacity: "0",
+      duration: 0.8,
+      ease: "power4.inOut",
+    });
+  }, 1500); // 1.5초 후에 애니메이션 제거
 });

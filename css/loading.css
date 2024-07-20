@@ -7,7 +7,7 @@
   position: fixed;
   width: 100%;
   height: calc(var(--vh) * 30);
-  top: 50%;
+  top: 60%;
   transform: translate(0, -50%);
   display: flex;
   justify-content: center;
