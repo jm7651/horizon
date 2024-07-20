@@ -62,3 +62,13 @@ window.addEventListener("scroll", () => {
   parallax003.style.transform = `translateY(${window.scrollY * -0.7}px)`;
   parallax003Img.style.transform = `rotate(${window.scrollY / 2}deg)`;
 });
+
+// 뷰포트 높이를 CSS 변수로 설정하는 함수
+function setViewportHeight() {
+  const vh = window.innerHeight * 0.01; // 뷰포트 높이의 1%
+  document.documentElement.style.setProperty("--vh", `${vh}px`); // CSS 변수 설정
+}
+
+// 페이지 로드 시 및 윈도우 리사이즈 시 뷰포트 높이 설정
+window.addEventListener("load", setViewportHeight);
+window.addEventListener("resize", setViewportHeight);
