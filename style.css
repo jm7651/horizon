@@ -697,7 +697,10 @@ body.no-scroll {
     font-size: 2rem;
   }
   .section_main_text {
-    font-size: 4rem;
+    font-size: 3.2rem;
+  }
+  .section_sub_text {
+    font-size: 1.6rem;
   }
   .section_desc_wrapper div {
     font-size: 14px;
