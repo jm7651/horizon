@@ -408,7 +408,7 @@ body.no-scroll {
 }
 #mockup_container {
   padding: 40px 20px 200px;
-  background: #8f41bf;
+  background: #fff;
 }
 
 .section_container .section_sub_text {
@@ -470,8 +470,8 @@ body.no-scroll {
   width: 100%;
 }
 #comparison_section {
-  background: #0e100f;
-  color: #f5f5f7;
+  background: #fff;
+  color: var(--main_text_color);
 }
 .split > span {
   display: inline-block;
@@ -484,7 +484,7 @@ body.no-scroll {
 }
 .final_text_container {
   padding: 60px 0;
-  background: linear-gradient(180deg, #0e0f0f 0%, #8f41bf 100%);
+  background: #fff;
 }
 .final_contents {
   padding: 4px 3vw;
@@ -501,7 +501,7 @@ body.no-scroll {
   font-size: 2vw;
   font-weight: 500;
   font-family: "Prompt", sans-serif;
-  color: #fff6ff;
+  color: var(--main_text_color);
   line-height: 130%; /* 156px */
   display: flex;
   align-items: center;
@@ -509,7 +509,7 @@ body.no-scroll {
 .final_kr_text {
   font-size: 2vw;
   font-weight: 700;
-  color: #fff6ff;
+  color: var(--main_text_color);
   line-height: 130%; /* 156px */
   display: flex;
   align-items: center;
