@@ -235,7 +235,7 @@ body.no-scroll {
   padding: 0 4vw;
 }
 #parallax_005 {
-  width: 6vw;
+  width: 15vw;
   min-width: 50px;
   top: 180%;
   right: 10%;
@@ -563,7 +563,8 @@ body.no-scroll {
   padding: 8rem;
   gap: 8rem;
   align-self: stretch;
-  background: #f0f0f0;
+  background: #fff;
+  border-top: 1px solid #f0f0f0;
 }
 .horizon_footer_wrapper {
   display: flex;
@@ -803,7 +804,8 @@ body.no-scroll {
     width: 18vw;
   }
   #parallax_005 {
-    right: 10%;
+    right: 0%;
+    width: 40%;
   }
   .footer_video {
     width: 50%;
