@@ -784,6 +784,9 @@ body.no-scroll {
   .mockup_section {
     margin: 0;
   }
+  .final_text_container {
+    padding: 100px 0;
+  }
   .footer001 {
     width: 28vw;
     border-radius: 4px;
