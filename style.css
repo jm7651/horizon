@@ -519,11 +519,10 @@ body.no-scroll {
 }
 .final_contents img {
   width: 100%;
-  border-radius: 32px;
 }
 .footer001 {
   width: 20vw;
-  border-radius: 20px;
+  border-radius: 4px;
   overflow: hidden;
 }
 
@@ -552,6 +551,9 @@ body.no-scroll {
   width: 12vw;
   display: flex;
   align-items: center;
+}
+#final_img008 video {
+  border-radius: 4px;
 }
 .horizon_container {
   display: flex;
@@ -604,7 +606,7 @@ body.no-scroll {
   gap: 12px;
 }
 .footer_text {
-  color: #282c35;
+  color: var(--sub_text_color);
   font-size: 16px;
   font-weight: 400;
   line-height: 130%;
@@ -805,7 +807,7 @@ body.no-scroll {
   }
   #final_img008,
   #final_img009 {
-    width: 18vw;
+    width: 24vw;
   }
   #parallax_005 {
     right: 0%;
